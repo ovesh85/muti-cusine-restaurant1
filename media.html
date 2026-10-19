@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Media — Sattva Open Kitchen</title>
+<meta name="description" content="Food photography, kitchen films and press assets from Sattva, a pure-vegetarian open kitchen in Ahmedabad.">
+<meta name="theme-color" content="#eee8dc">
+<meta property="og:title" content="Media — Sattva Open Kitchen">
+<meta property="og:image" content="assets/img/og.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=Martian+Mono:wdth,wght@87.5,400;87.5,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="inner">
+<header class="hdr" id="hdr">
+  <a href="index.html" class="hdr-logo" aria-label="Sattva home">SATTVA<sup>®</sup></a>
+  <div class="hdr-live" id="hdrLive"><i></i><span id="liveTxt">Kitchen open</span><em id="liveClock">--:--</em></div>
+  <nav class="hdr-nav" aria-label="Primary">
+    <a href="index.html#tour" class="hl">Tour</a><a href="index.html#menu" class="hl">Menu</a><a href="media.html" class="hl" aria-current="page">Media</a><a href="investors.html" class="hl">Investors</a>
+    <a href="index.html#reserve" class="vf"><span>Book a table</span></a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="mnav" id="mnav" aria-hidden="true">
+  <a href="index.html#tour"><small>01</small>Kitchen tour</a><a href="index.html#live"><small>02</small>Live stations</a><a href="index.html#menu"><small>03</small>Menu</a><a href="media.html"><small>04</small>Media</a><a href="investors.html"><small>05</small>Investors</a><a href="index.html#reserve"><small>06</small>Book a table</a>
+  <p>Pure vegetarian · Eggless kitchen · Jain &amp; vegan on request</p>
+</div>
+
+<main id="media">
+  <section class="pg-hero" data-hdr="paper">
+    <p class="kicker">(Media) — Gallery &amp; press</p>
+    <h1 class="big rv-up">Shot in the<br><em>open kitchen.</em></h1>
+    <div class="pg-hero-row"><p class="pg-lede rv-fade">Food photography, station films and spaces — everything here is vegetarian, and free to use for press with credit “Sattva, Ahmedabad”.</p>
+      <a href="#kit" class="vf solid"><span>Press kit</span><i class="arr">↓</i></a></div>
+  </section>
+
+  <section class="reel" id="reel" data-hdr="dark">
+    <video playsinline preload="none" poster="assets/media/kitchen-t2.webp" src="assets/media/reel.mp4"></video>
+    <div class="reel-ui"><p class="kicker light">Film · 0:31</p><h2>From the lantern path<br>to the pass.</h2>
+      <button class="vf solid" id="reelPlay"><span class="pl1">Play the kitchen film</span><span class="pl2">Pause</span><i class="arr">▶</i></button></div>
+  </section>
+
+  <section class="md-sec" data-hdr="paper">
+    <div class="ir-bar"><h2 class="ir-h">Gallery</h2>
+      <div class="seg-tg" id="mdFilter" role="group" aria-label="Filter gallery">
+        <button data-f="all" class="on" aria-pressed="true">All</button><button data-f="food" aria-pressed="false">Food</button><button data-f="kitchen" aria-pressed="false">Kitchen</button><button data-f="spaces" aria-pressed="false">Spaces</button><button data-f="film" aria-pressed="false">Films</button>
+      </div></div>
+    <div class="md-grid" id="mdGrid"></div>
+  </section>
+
+  <section class="ir-sec ir-grid2 dark" id="kit" data-hdr="dark">
+    <article>
+      <p class="kicker light">Press kit</p>
+      <ul class="docs">
+        <li><a href="assets/img/favicon.svg" download="sattva-mark.svg"><span>Sattva mark (SVG)</span><em>Vector · 1 KB</em></a></li>
+        <li><a href="assets/media/reel.mp4" download="sattva-kitchen-film.mp4"><span>Kitchen film, 31 s (MP4)</span><em>1280 × 720</em></a></li>
+        <li><a href="#" data-demo="Demo: attach the hi-res photo pack ZIP here"><span>Hi-res photo pack</span><em>ZIP · 240 MB</em></a></li>
+        <li><a href="#" data-demo="Demo: attach the fact sheet PDF here"><span>Fact sheet &amp; chef bios</span><em>PDF · 0.8 MB</em></a></li>
+      </ul>
+    </article>
+    <article>
+      <p class="kicker light">Fast facts</p>
+      <dl class="facts"><div><dt>Opened</dt><dd>2026, Bodakdev, Ahmedabad</dd></div><div><dt>Cuisines</dt><dd>India, Italy, Mexico, Japan, Lebanon, Thailand + desserts</dd></div><div><dt>Kitchen</dt><dd>Seven live stations, fully open to the room</dd></div><div><dt>Promise</dt><dd>100% vegetarian. No meat, fish, seafood or eggs.</dd></div></dl>
+      <div class="ir-contact"><p class="kicker light">Press contact</p><p>Communications team<br><a class="hl" href="#" data-demo="Demo: add the press email here">press@sattva.example</a></p></div>
+    </article>
+  </section>
+</main>
+
+<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-label="Media viewer">
+  <div class="lb-top"><span id="lbNo">01 / 29</span><a id="lbDl" class="hl" href="#" download>Download</a><button id="lbClose" class="vf"><span>Close ×</span></button></div>
+  <div class="lb-media" id="lbMedia"></div>
+  <div class="lb-cap" id="lbCap"></div>
+  <button class="lb-nav prev" id="lbPrev" aria-label="Previous">←</button><button class="lb-nav next" id="lbNext" aria-label="Next">→</button>
+</div>
+<!-- ============ FOOTER ============ -->
+<footer class="ftr" data-hdr="paper">
+  <div class="marq" aria-hidden="true"><div class="marq-in"><span>Walk in — Watch it cooked — Pure vegetarian — No eggs, ever — </span><span>Walk in — Watch it cooked — Pure vegetarian — No eggs, ever — </span></div></div>
+  <div class="ftr-grid">
+    <div><small>Visit</small><p>Sattva Glasshouse<br>Sindhu Bhavan Marg, Bodakdev<br>Ahmedabad 380059</p></div>
+    <div><small>Kitchen hours</small><p>Lunch 12:00 – 15:30<br>Dinner 19:00 – 23:30<br>Closed Mondays</p></div>
+    <div><small>The promise</small><p><i class="veg"></i>100% vegetarian. No meat, fish, seafood or eggs — in the kitchen, the bar or the bakery.</p></div>
+    <div><small>Go</small><p><a href="index.html#tour" class="hl">Kitchen tour</a><br><a href="index.html#reserve" class="hl">Book a table</a><br><a href="media.html" class="hl">Media &amp; press</a><br><a href="investors.html" class="hl">Investor relations</a></p></div>
+  </div>
+  <div class="ftr-word" aria-hidden="true">SATTVA</div>
+  <p class="ftr-legal">© 2026 Sattva — a fictional demo brand. All imagery and film is AI-generated for representation only.</p>
+</footer>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="cursor" aria-hidden="true"><span></span></div>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

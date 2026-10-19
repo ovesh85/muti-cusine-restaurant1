@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sattva — Open Kitchen · Pure Vegetarian · Ahmedabad</title>
+<meta name="description" content="Walk in. Watch it cooked. Sattva is a pure-vegetarian world kitchen in Ahmedabad with seven live stations — tandoor, wok, tawa, pasta, grill, mezze and dessert.">
+<meta name="theme-color" content="#eee8dc">
+<meta property="og:title" content="Sattva — Walk in. Watch it cooked.">
+<meta property="og:description" content="A pure-vegetarian open kitchen with seven live stations.">
+<meta property="og:image" content="assets/img/og.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=Martian+Mono:wdth,wght@87.5,400;87.5,500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/seq/tour/d/001.webp" media="(min-width: 860px)">
+<link rel="preload" as="image" href="assets/seq/tour/m/001.webp" media="(max-width: 859px)">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER: film leader ============ -->
+<div id="leader" aria-hidden="true">
+  <div class="ld-frame">
+    <div class="ld-sweep"></div>
+    <svg class="ld-x" viewBox="0 0 100 100" preserveAspectRatio="none"><line x1="0" y1="50" x2="100" y2="50"/><line x1="50" y1="0" x2="50" y2="100"/></svg>
+    <svg class="ld-rings" viewBox="0 0 200 200"><circle cx="100" cy="100" r="88"/><circle cx="100" cy="100" r="72"/></svg>
+    <b id="ldNum">3</b>
+  </div>
+  <div class="ld-meta"><span>SATTVA · OPEN KITCHEN</span><span id="ldPct">000%</span><span>ROLL 01 · TAKE 01</span></div>
+</div>
+
+<!-- ============ HEADER (difference blend) ============ -->
+<header class="hdr" id="hdr">
+  <a href="#top" class="hdr-logo" aria-label="Sattva home">SATTVA<sup>®</sup></a>
+  <div class="hdr-live" id="hdrLive"><i></i><span id="liveTxt">Kitchen open</span><em id="liveClock">--:--</em></div>
+  <nav class="hdr-nav" aria-label="Primary">
+    <a href="#tour" class="hl">Tour</a><a href="#menu" class="hl">Menu</a><a href="media.html" class="hl">Media</a><a href="investors.html" class="hl">Investors</a>
+    <button class="hl hdr-cart" id="cartBtn" aria-label="Open order">Order <span id="cartN">0</span></button>
+    <a href="#reserve" class="vf"><span>Book a table</span></a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="mnav" id="mnav" aria-hidden="true">
+  <a href="#tour"><small>01</small>Kitchen tour</a><a href="#live"><small>02</small>Live stations</a><a href="#plate"><small>03</small>One plate, seven countries</a><a href="#menu"><small>04</small>Menu</a><a href="#reserve"><small>05</small>Book a table</a><a href="media.html"><small>06</small>Media</a><a href="investors.html"><small>07</small>Investors</a>
+  <p>Pure vegetarian · Eggless kitchen · Jain &amp; vegan on request</p>
+</div>
+
+<main id="top">
+
+<!-- ============ 1. OPEN + KITCHEN TOUR (one pinned stage) ============ -->
+<section class="tour" id="tour" data-hdr="tour" data-vh="620" aria-label="Walk through the restaurant and open kitchen">
+  <div class="stage">
+    <canvas class="film" data-seq="assets/seq/tour/" data-count="367" data-eager></canvas>
+    <canvas class="mask" id="mask" aria-hidden="true"></canvas>
+
+    <!-- hero chrome (on the cream mask) -->
+    <div class="hero" id="hero">
+      <div class="hero-grid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="hero-top">
+        <p><b>(01)</b>A pure-vegetarian<br>world kitchen</p>
+        <p><b>(02)</b>Seven live stations,<br>no kitchen doors</p>
+        <p><b>(03)</b>Bodakdev, Ahmedabad<br>23.03° N 72.58° E</p>
+        <p class="veg-note"><i class="veg"></i>No meat · No fish<br>No eggs. Ever.</p>
+      </div>
+      <h1 class="sr">Sattva — walk in, watch it cooked</h1>
+      <div class="hero-bot">
+        <p class="hero-line"><span class="rv">Walk in.</span> <em class="rv">Watch it cooked.</em></p>
+        <div class="hero-cta">
+          <a href="#tour" class="vf solid" id="startTour"><span>Start the kitchen tour</span><i class="arr">↓</i></a>
+          <a href="#reserve" class="vf"><span>Book a table</span></a>
+        </div>
+        <p class="hero-scroll">Scroll — the camera follows you in</p>
+      </div>
+    </div>
+
+    <!-- camera HUD (over the film) -->
+    <div class="hud" id="hud" aria-hidden="true">
+      <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+      <div class="hud-tl"><i class="rec"></i>REC <b id="camNo">CAM 01</b><span>/ 07</span></div>
+      <div class="hud-tr"><span id="tc">00:00:00:00</span><span>4K · 24P · ISO 800</span></div>
+      <div class="focus" id="focus"><div class="focus-in" id="focusIn"></div></div>
+      <svg class="minimap" id="minimap" viewBox="0 0 200 130">
+        <rect x="6" y="6" width="188" height="118" rx="14" class="mm-wall"/>
+        <path d="M30 6 V124 M170 6 V124" class="mm-rib"/>
+        <rect x="40" y="12" width="120" height="30" rx="4" class="mm-kitchen"/>
+        <text x="100" y="30" text-anchor="middle">KITCHEN</text>
+        <g class="mm-tables"><circle cx="60" cy="64" r="4"/><circle cx="140" cy="64" r="4"/><circle cx="60" cy="86" r="4"/><circle cx="140" cy="86" r="4"/><circle cx="60" cy="106" r="4"/><circle cx="140" cy="106" r="4"/></g>
+        <path id="mmPath" d="M100 128 L100 92 L100 50 L58 30 L100 24 L140 30 L152 46" class="mm-path"/>
+        <path id="mmTrail" d="M100 128 L100 92 L100 50 L58 30 L100 24 L140 30 L152 46" class="mm-trail" pathLength="1"/>
+        <circle id="mmDot" r="5" cx="0" cy="0" class="mm-dot" style="transform:translate(100px,128px)"/>
+      </svg>
+    </div>
+
+    <!-- lower third -->
+    <div class="l3" id="l3" aria-live="polite">
+      <div class="l3-tag"><span id="l3Cam">CAM 01</span><span id="l3Where">The approach</span></div>
+      <h2 id="l3Title">The Glasshouse</h2>
+      <p id="l3Desc">A Victorian-style glasshouse in Bodakdev, lit by four hundred lanterns.</p>
+      <div class="l3-stats">
+        <div><small id="l3K1">Seats</small><b id="l3V1">84</b></div>
+        <div><small id="l3K2">Stations</small><b id="l3V2">07</b></div>
+        <div class="who"><small>On station</small><b id="l3Who">—</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. LIVE STATIONS ============ -->
+<section class="live" id="live" data-hdr="paper">
+  <div class="sec-head">
+    <p class="kicker">(02) — Live stations</p>
+    <h2 class="big rv-up">On the line,<br><em>right now.</em></h2>
+    <p class="sec-sub">Every station is in full view of the dining room. Hover a station to step closer.</p>
+  </div>
+  <div class="stations" id="stations"></div>
+</section>
+
+<!-- ============ 3. ONE PLATE (scroll film) ============ -->
+<section class="plate" id="plate" data-hdr="dark" data-vh="700" aria-label="One plate, seven countries">
+  <div class="stage">
+    <div class="pl-word" id="plWord" aria-hidden="true"><span>DEPART</span></div>
+    <canvas class="film" data-seq="assets/seq/journey/" data-count="428"></canvas>
+    <div class="pl-shade"></div>
+    <div class="pl-card" id="plCard">
+      <p class="kicker light">(03) — One plate, seven countries</p>
+      <div class="pl-idx"><b id="plNum">00</b><span id="plCountry">Departure</span></div>
+      <h3 id="plTitle">The empty thali</h3>
+      <p id="plDesc"></p>
+      <ul id="plDishes"></ul>
+    </div>
+    <div class="pl-globe"><canvas id="globe" width="240" height="240" aria-hidden="true"></canvas><div><b id="gCity">Ahmedabad</b><span><i id="gTime">--:--</i> local · <i id="gKm">0</i> km</span></div></div>
+    <ol class="pl-scale" id="plScale" aria-label="Stops"></ol>
+  </div>
+</section>
+
+<!-- ============ 4. MENU ============ -->
+<section class="menu" id="menu" data-hdr="paper">
+  <div class="sec-head">
+    <p class="kicker">(04) — The menu</p>
+    <h2 class="big rv-up">Seven countries.<br><em>Not one compromise.</em></h2>
+    <div class="menu-tools">
+      <div class="filters" id="filters" role="group" aria-label="Filter dishes">
+        <button class="tg on" data-f="all">All</button><button class="tg" data-f="vegan">Vegan</button><button class="tg" data-f="jain">Jain</button><button class="tg" data-f="gf">Gluten-free</button>
+      </div>
+      <p class="menu-note"><i class="veg"></i>Every dish is vegetarian &amp; eggless</p>
+    </div>
+  </div>
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <ol class="m-list" id="mList"></ol>
+  <div class="m-float" id="mFloat" aria-hidden="true"><img id="mFloatImg" src="assets/img/plate-1.webp" alt=""></div>
+</section>
+
+<!-- ============ 5. RESERVE (KOT ticket) ============ -->
+<section class="reserve" id="reserve" data-hdr="dark">
+  <div class="rs-img"><img src="assets/img/private.webp" alt="The Fern Room, a candlelit private table inside the glasshouse" loading="lazy" decoding="async" width="1920" height="1086"><p class="rs-cap">The Fern Room · seats twelve · chef's tasting of all seven stations</p></div>
+  <div class="rs-copy">
+    <p class="kicker">(05) — Book a table</p>
+    <h2 class="big rv-up">Sit close<br><em>to the fire.</em></h2>
+    <p>Ask for a counter seat and you'll eat inches from the tandoor and the wok. We'll print your table like a kitchen ticket.</p>
+  </div>
+  <div class="kot" id="kot">
+    <div class="kot-edge top"></div>
+    <form class="kot-form" id="rvForm" novalidate>
+      <div class="kot-head"><b>SATTVA · KOT</b><span id="kotNo">#0000</span></div>
+      <label class="row">Name<input name="name" required autocomplete="name" placeholder="Your name"></label>
+      <label class="row">Phone<input name="phone" required inputmode="tel" autocomplete="tel" placeholder="+91" pattern="[+0-9 ]{10,15}"></label>
+      <div class="row2">
+        <label class="row">Date<input name="date" type="date" required></label>
+        <label class="row">Time<select name="time" required><option value="">--:--</option><option>12:30</option><option>13:30</option><option>19:00</option><option>20:00</option><option>21:00</option><option>22:00</option></select></label>
+      </div>
+      <div class="row guests"><span>Guests</span><div class="stepper"><button type="button" data-s="-1" aria-label="Fewer guests">−</button><output id="guests">2</output><button type="button" data-s="1" aria-label="More guests">+</button></div></div>
+      <fieldset class="row seg"><legend>Seat</legend>
+        <label><input type="radio" name="seat" value="Chef's counter" checked><span>Chef's counter</span></label>
+        <label><input type="radio" name="seat" value="Glasshouse"><span>Glasshouse</span></label>
+        <label><input type="radio" name="seat" value="Fern Room"><span>Fern Room</span></label>
+      </fieldset>
+      <fieldset class="row seg"><legend>Kitchen</legend>
+        <label><input type="radio" name="diet" value="Vegetarian" checked><span>Veg</span></label>
+        <label><input type="radio" name="diet" value="Jain"><span>Jain</span></label>
+        <label><input type="radio" name="diet" value="Vegan"><span>Vegan</span></label>
+      </fieldset>
+      <button class="vf solid wide" type="submit"><span>Print my table</span><i class="arr">→</i></button>
+      <p class="f-err" id="fErr" role="alert"></p>
+    </form>
+    <div class="kot-ok" id="kotOk" aria-live="polite">
+      <div class="kot-head"><b>SATTVA · TABLE CONFIRMED</b><span id="okNo">#0000</span></div>
+      <dl>
+        <dt>Guest</dt><dd id="okName">—</dd>
+        <dt>Date</dt><dd id="okD">—</dd>
+        <dt>Time</dt><dd id="okT">—</dd>
+        <dt>Covers</dt><dd id="okG">2</dd>
+        <dt>Seat</dt><dd id="okS">—</dd>
+        <dt>Kitchen</dt><dd id="okP">—</dd>
+      </dl>
+      <p class="kot-msg">** FIRE ON ARRIVAL **<br>We'll confirm on WhatsApp shortly.</p>
+      <div class="kot-bar"></div>
+      <button class="vf" id="rvAgain" type="button"><span>Book another</span></button>
+    </div>
+    <div class="kot-edge bot"></div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ftr" data-hdr="paper">
+  <div class="marq" aria-hidden="true"><div class="marq-in"><span>Walk in — Watch it cooked — Pure vegetarian — No eggs, ever — </span><span>Walk in — Watch it cooked — Pure vegetarian — No eggs, ever — </span></div></div>
+  <div class="ftr-grid">
+    <div><small>Visit</small><p>Sattva Glasshouse<br>Sindhu Bhavan Marg, Bodakdev<br>Ahmedabad 380059</p></div>
+    <div><small>Kitchen hours</small><p>Lunch 12:00 – 15:30<br>Dinner 19:00 – 23:30<br>Closed Mondays</p></div>
+    <div><small>The promise</small><p><i class="veg"></i>100% vegetarian. No meat, fish, seafood or eggs — in the kitchen, the bar or the bakery.</p></div>
+    <div><small>Go</small><p><a href="#tour" class="hl">Kitchen tour</a><br><a href="#reserve" class="hl">Book a table</a><br><a href="media.html" class="hl">Media &amp; press</a><br><a href="investors.html" class="hl">Investor relations</a></p></div>
+  </div>
+  <div class="ftr-word" aria-hidden="true">SATTVA</div>
+  <p class="ftr-legal">© 2026 Sattva — a fictional demo brand. All imagery and film is AI-generated for representation only.</p>
+</footer>
+
+<!-- ============ ORDER DRAWER (KOT) ============ -->
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Your order">
+  <div class="dr-ticket">
+    <div class="kot-head"><b>YOUR ORDER</b><button id="drClose" aria-label="Close order">CLOSE ×</button></div>
+    <ul class="dr-list" id="drList"></ul>
+    <div class="dr-tot"><span>TOTAL</span><b id="drTotal">₹0</b></div>
+    <button class="vf solid wide" id="drCheckout"><span>Checkout for pickup</span><i class="arr">→</i></button>
+    <p class="dr-note"><i class="veg"></i>Packed in leaf-fibre boxes</p>
+    <div class="kot-edge bot"></div>
+  </div>
+</aside>
+<div class="scrim" id="scrim"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="cursor" aria-hidden="true"><span></span></div>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
